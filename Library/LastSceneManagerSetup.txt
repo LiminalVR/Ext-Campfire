@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Liminal/Examples/2.Interaction/Interaction.unity
+  isLoaded: 1
+  isActive: 1
