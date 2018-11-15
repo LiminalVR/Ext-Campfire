@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Liminal/Examples/2.Interaction/Interaction.unity
+- path: Assets/RainStickStudio/Scenes/David.unity
   isLoaded: 1
   isActive: 1
