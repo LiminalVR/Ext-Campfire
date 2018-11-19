@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RainStickStudio/Scenes/David.unity
+- path: Assets/BrokenVector/LowPolySurvivalEssentials/Example/Example.unity
   isLoaded: 1
   isActive: 1
