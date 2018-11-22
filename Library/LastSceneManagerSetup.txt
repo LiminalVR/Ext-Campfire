@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RainStickStudio/Scenes/Matt.unity
+- path: Assets/RainStickStudio/Scenes/Lydia.unity
   isLoaded: 1
   isActive: 1
