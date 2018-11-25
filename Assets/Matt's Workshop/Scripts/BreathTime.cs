@@ -27,8 +27,8 @@ public class BreathTime : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        stageTimes = GetStageTimeVector();
-        totalExperienceTime = GetTotalTime();
+        stageTimes = GetStageTimesVector();
+        totalExperienceTime = GetTotalExperienceTime();
 
         startTime = Time.time;
         endTime = startTime + totalExperienceTime;
@@ -45,22 +45,28 @@ public class BreathTime : MonoBehaviour {
 	}
 
     // GetTotalTime - returns total time experience is expected to take
-    private float GetTotalTime()
+    private float GetTotalExperienceTime()
     {
         return stageTimes.x + stageTimes.y + stageTimes.z;
     }
     // GetStageTimeVector - places stage times in vector following Stage enum
-    private Vector3 GetStageTimeVector()
+    private Vector3 GetStageTimesVector()
     {
-        return new Vector3(GetStageTime((int)Stage.ONE), GetStageTime((int)Stage.TWO), GetStageTime((int)Stage.THREE));
+        return new Vector3(GetTotalStageTime((int)Stage.ONE), GetTotalStageTime((int)Stage.TWO), GetTotalStageTime((int)Stage.THREE));
     }
     // GetStageTime - returns span of time taken per stage
-    private float GetStageTime(int stage)
+    private float GetTotalStageTime(int stage)
     {
         return 
             (breathTimes[(int)stage].x + 
              breathTimes[(int)stage].y + 
              breathTimes[(int)stage].z) 
            * stageRepetitions[(int)stage];
+    }
+
+    // utility functions
+    public float experienceTime ()
+    {
+        return totalExperienceTime;
     }
 }
