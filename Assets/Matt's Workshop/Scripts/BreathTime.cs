@@ -55,7 +55,7 @@ public class BreathTime : MonoBehaviour {
         return new Vector3(GetTotalStageTime((int)Stage.ONE), GetTotalStageTime((int)Stage.TWO), GetTotalStageTime((int)Stage.THREE));
     }
     // GetStageTime - returns span of time taken per stage
-    private float GetTotalStageTime(int stage)
+    public float GetTotalStageTime(int stage)
     {
         return 
             (breathTimes[(int)stage].x + 
@@ -63,9 +63,8 @@ public class BreathTime : MonoBehaviour {
              breathTimes[(int)stage].z) 
            * stageRepetitions[(int)stage];
     }
-
     // utility functions
-    public float experienceTime ()
+    public float ExperienceTime ()
     {
         return totalExperienceTime;
     }
