@@ -22,7 +22,9 @@ public class BreathTime : MonoBehaviour {
     [SerializeField]
     private Vector3 stageTimes;
 
+    [SerializeField]
     private float totalExperienceTime;
+    [SerializeField]
     private float startTime, endTime;
 
 	// Use this for initialization
@@ -33,10 +35,10 @@ public class BreathTime : MonoBehaviour {
         startTime = Time.time;
         endTime = startTime + totalExperienceTime;
 
-        Debug.Log("Start Time " + startTime);
-        Debug.Log("End Time " + endTime);
-        Debug.Log("Stage Times: " + stageTimes);
-        Debug.Log("Total Experience Time: " + totalExperienceTime);
+        //Debug.Log("Start Time " + startTime);
+        //Debug.Log("End Time " + endTime);
+        //Debug.Log("Stage Times: " + stageTimes);
+        //Debug.Log("Total Experience Time: " + totalExperienceTime);
 	}
 	
 	// Update is called once per frame
@@ -45,7 +47,7 @@ public class BreathTime : MonoBehaviour {
 	}
 
     // GetTotalTime - returns total time experience is expected to take
-    private float GetTotalExperienceTime()
+    public float GetTotalExperienceTime()
     {
         return stageTimes.x + stageTimes.y + stageTimes.z;
     }
@@ -57,15 +59,35 @@ public class BreathTime : MonoBehaviour {
     // GetStageTime - returns span of time taken per stage
     public float GetTotalStageTime(int stage)
     {
+        Debug.Log("rep1: " + stageRepetitions[0]);
+        Debug.Log("rep2: " + stageRepetitions[1]);
+        Debug.Log("rep3: " + stageRepetitions[2]);
+
         return 
             (breathTimes[(int)stage].x + 
              breathTimes[(int)stage].y + 
              breathTimes[(int)stage].z) 
-           * stageRepetitions[(int)stage];
+           * stageRepetitions[stage];
     }
     // utility functions
     public float ExperienceTime ()
     {
         return totalExperienceTime;
+    }
+
+    public float GetInhaleTime(int stage)
+    {
+        Debug.Log("Inhale: " + breathTimes[stage].z);
+        return breathTimes[stage].x;
+    }
+    public float GetHoldTime(int stage)
+    {
+        Debug.Log("Hold: " + breathTimes[stage].z);
+        return breathTimes[stage].y;
+    }
+    public float GetExhaleTime(int stage)
+    {
+        Debug.Log("Exhale: " + breathTimes[stage].z);
+        return breathTimes[stage].z;
     }
 }
