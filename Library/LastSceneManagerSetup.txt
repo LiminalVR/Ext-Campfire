@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RainStickStudio/Scenes/Lydia.unity
+- path: Assets/RainStickStudio/Scenes/Connor.unity
   isLoaded: 1
   isActive: 1
