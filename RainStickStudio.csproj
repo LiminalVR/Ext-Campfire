@@ -259,7 +259,6 @@
     <Compile Include="Assets\BrokenVector\LowPolySurvivalEssentials\Example\Scripts\AnimatedFire.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DayNightController.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DemoScripts\RoatateCamera.cs" />
-    <Compile Include="Assets\HolyShift\Scripts\CheckForStandardAssets.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\Liminal\Examples\Scripts\AutoVRAvatarSetup.cs" />
