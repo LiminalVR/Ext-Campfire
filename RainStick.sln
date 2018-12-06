@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainstick.Plugins", "Rainstick.Plugins.csproj", "{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainstick", "Rainstick.csproj", "{2AE60AE0-E318-B7F8-927D-49239896AACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainstick.Plugins", "Rainstick.Plugins.csproj", "{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainstick.Editor.Plugins", "Rainstick.Editor.Plugins.csproj", "{BDCCE0A5-91CE-554B-4498-AF2905A4FC82}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2AE60AE0-E318-B7F8-927D-49239896AACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AE60AE0-E318-B7F8-927D-49239896AACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE60AE0-E318-B7F8-927D-49239896AACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE60AE0-E318-B7F8-927D-49239896AACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A6CBBA-F417-F91E-8F83-DBD56F89D0E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BDCCE0A5-91CE-554B-4498-AF2905A4FC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BDCCE0A5-91CE-554B-4498-AF2905A4FC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDCCE0A5-91CE-554B-4498-AF2905A4FC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
