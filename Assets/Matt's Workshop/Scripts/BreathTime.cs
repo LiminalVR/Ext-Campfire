@@ -59,9 +59,9 @@ public class BreathTime : MonoBehaviour {
     // GetStageTime - returns span of time taken per stage
     public float GetTotalStageTime(int stage)
     {
-        Debug.Log("rep1: " + stageRepetitions[0]);
-        Debug.Log("rep2: " + stageRepetitions[1]);
-        Debug.Log("rep3: " + stageRepetitions[2]);
+        //Debug.Log("rep1: " + stageRepetitions[0]);
+        //Debug.Log("rep2: " + stageRepetitions[1]);
+        //Debug.Log("rep3: " + stageRepetitions[2]);
 
         return 
             (breathTimes[(int)stage].x + 
@@ -77,17 +77,17 @@ public class BreathTime : MonoBehaviour {
 
     public float GetInhaleTime(int stage)
     {
-        Debug.Log("Inhale: " + breathTimes[stage].z);
+        //Debug.Log("Inhale: " + breathTimes[stage].z);
         return breathTimes[stage].x;
     }
     public float GetHoldTime(int stage)
     {
-        Debug.Log("Hold: " + breathTimes[stage].z);
+       // Debug.Log("Hold: " + breathTimes[stage].z);
         return breathTimes[stage].y;
     }
     public float GetExhaleTime(int stage)
     {
-        Debug.Log("Exhale: " + breathTimes[stage].z);
+        //Debug.Log("Exhale: " + breathTimes[stage].z);
         return breathTimes[stage].z;
     }
 }

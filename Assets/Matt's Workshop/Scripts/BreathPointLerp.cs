@@ -36,10 +36,10 @@ public class BreathPointLerp : MonoBehaviour {
         if(total_Marker.token.transform.position != total_Marker.p2.transform.position)
             TrackBreath();
 
-        temp += Time.deltaTime;
+        //temp += Time.deltaTime;
 
         total_Marker.token.transform.position  = Vector3.MoveTowards(total_Marker.token.transform.position,  total_Marker.p2.transform.position,  Time.deltaTime / timerRef.GetTotalExperienceTime());
-        print(Time.deltaTime / timerRef.GetTotalExperienceTime());
+        //Debug.Log(Time.deltaTime / timerRef.GetTotalExperienceTime());
 
         // begin stage 1
         stage1_Marker.token.transform.position = Vector3.MoveTowards(stage1_Marker.token.transform.position, stage1_Marker.p2.transform.position, Time.deltaTime / timerRef.GetTotalStageTime(0));
