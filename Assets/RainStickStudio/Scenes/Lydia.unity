@@ -4583,7 +4583,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -11305,6 +11305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434793410}
   - component: {fileID: 1434793409}
+  - component: {fileID: 1434793411}
   m_Layer: 0
   m_Name: Water (1)ReflectionSceneCamera
   m_TagString: Untagged
@@ -11353,13 +11354,21 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434793408}
-  m_LocalRotation: {x: 0.21410781, y: 0.06850133, z: 0.015052135, w: -0.9742889}
-  m_LocalPosition: {x: 0.6400088, y: -5.347824, z: -4.5387096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1434793411
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434793408}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!4 &1435630133 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1ed05b93464bb6242b1d0cf9e388ed67, type: 3}
