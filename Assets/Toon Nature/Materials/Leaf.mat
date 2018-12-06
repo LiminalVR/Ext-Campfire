@@ -32,7 +32,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AO: 0.2
-    - _BaseLight: 0.6
+    - _BaseLight: 0.35
     - _Cull: 0
     - _Cutoff: 0.4
     - _InvFade: 1
