@@ -36,6 +36,8 @@ public class FireSystem : MonoBehaviour {
     [Header("Campfire Properties")]
     public Vector3 minScale;
     public Vector3 maxScale;
+    private Vector3 adjScale;
+    private float scaleVal;
 
     [Header("Lantern Properties")]
     public float minIntensity;
@@ -56,10 +58,11 @@ public class FireSystem : MonoBehaviour {
 
         currentStage = 0;
         step = breathe.Inhale;
-        stage1 = stage2 = stage3 = experienceTime = holdTimeSentinel = 0f; 
+        scaleVal = stage1 = stage2 = stage3 = experienceTime = holdTimeSentinel = 0f;
+        adjScale = maxScale - minScale;
 	}	
 	void Update () {
-        //LogData();
+        LogData();
 
         if(experienceTime != 1f)
         {
@@ -119,7 +122,9 @@ public class FireSystem : MonoBehaviour {
         switch(step)
         {
             case (breathe.Inhale):
-                controlledComponent.transform.localScale = Vector3.MoveTowards(controlledComponent.transform.localScale, maxScale, Time.deltaTime / _BreathTime.GetInhaleTime(currentStage));
+                scaleVal = Mathf.MoveTowards(scaleVal, 1f, Time.deltaTime / _BreathTime.GetInhaleTime(currentStage));
+                controlledComponent.transform.localScale = minScale + (adjScale * scaleVal);
+
                 if(controlledComponent.transform.localScale == maxScale)
                 {
                     holdTimeSentinel = Time.timeSinceLevelLoad;
@@ -138,7 +143,9 @@ public class FireSystem : MonoBehaviour {
                 break;
 
             case (breathe.Exhale):
-                controlledComponent.transform.localScale = Vector3.MoveTowards(controlledComponent.transform.localScale, minScale, Time.deltaTime / _BreathTime.GetExhaleTime(currentStage));
+                scaleVal = Mathf.MoveTowards(scaleVal, 0f, Time.deltaTime / _BreathTime.GetExhaleTime(currentStage));
+                controlledComponent.transform.localScale = minScale + (adjScale * scaleVal);
+
                 if (controlledComponent.transform.localScale == minScale)
                 {
                     step = breathe.Inhale;
@@ -176,11 +183,16 @@ public class FireSystem : MonoBehaviour {
 
     void LogData()
     {
+        //Debug.Log(
+        //    "ExpTime: " + experienceTime + 
+        //    " CurrS: " + currentStage +
+        //    " S1: " + stage1 +
+        //    " S2: " + stage2 +
+        //    " S3: " + stage3);
+
         Debug.Log(
-            "ExpTime: " + experienceTime + 
-            " CurrS: " + currentStage +
-            " S1: " + stage1 +
-            " S2: " + stage2 +
-            " S3: " + stage3);
+            "Inhale: " + _BreathTime.GetInhaleTime(currentStage) +
+            " Hold: " + _BreathTime.GetHoldTime(currentStage) +
+            " Exhale: " + _BreathTime.GetExhaleTime(currentStage));
     }
 }

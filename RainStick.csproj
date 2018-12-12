@@ -257,7 +257,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BrokenVector\LowPolySurvivalEssentials\Example\Scripts\AnimatedFire.cs" />
-    <Compile Include="Assets\HolyShift\Scripts\CheckForStandardAssets.cs" />
+    <Compile Include="Assets\Day Night Cycle\Scripts\DayNightController.cs" />
+    <Compile Include="Assets\Day Night Cycle\Scripts\DemoScripts\RoatateCamera.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\Liminal\Examples\Scripts\AutoVRAvatarSetup.cs" />
@@ -278,8 +279,12 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Time\Paticle_Timer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
+    <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
+    <None Include="Assets\Day Night Cycle\ReadMe.txt" />
     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
     <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
     <None Include="Assets\HolyShift\readme.txt" />
