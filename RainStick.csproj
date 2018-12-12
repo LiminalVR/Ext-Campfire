@@ -271,6 +271,7 @@
     <Compile Include="Assets\Matt&apos;s Workshop\Scripts\FireSystem.cs" />
     <Compile Include="Assets\Matt&apos;s Workshop\Scripts\TextTimer.cs" />
     <Compile Include="Assets\RainStickStudio\Scenes\FrameRateScript.cs" />
+    <Compile Include="Assets\RainStickStudio\Sound\SoundPrefab.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
