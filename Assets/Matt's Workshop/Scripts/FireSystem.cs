@@ -23,10 +23,11 @@ public class FireSystem : MonoBehaviour {
     // Variable definitions
     [SerializeField]
     private BreathTime _BreathTime;
-    private breathe step;
-    
+    private breathe step;    
 
-    public float stage1, stage2, stage3, experienceTime;
+    private float stage1, stage2, stage3, experienceTime;
+    private float scaleVal;
+    private Light lanternRef;
 
     [Header("Script Initialization")]
     [SerializeField]
@@ -37,16 +38,14 @@ public class FireSystem : MonoBehaviour {
     public Vector3 minScale;
     public Vector3 maxScale;
     private Vector3 adjScale;
-    private float scaleVal;
 
     [Header("Lantern Properties")]
     public float minIntensity;
     public float maxIntensity;
+    private float adjIntensity;
 
     [Header("TEST INFO")]
-    [SerializeField]
     private float holdTimeSentinel;
-    [SerializeField]
     private int currentStage;
 
     ////////////////////////////////////////////////
@@ -59,16 +58,22 @@ public class FireSystem : MonoBehaviour {
         currentStage = 0;
         step = breathe.Inhale;
         scaleVal = stage1 = stage2 = stage3 = experienceTime = holdTimeSentinel = 0f;
-        adjScale = maxScale - minScale;
+        if (isControlling == controlType.Lantern)
+        {
+            adjIntensity = maxIntensity - minIntensity;
+            lanternRef = controlledComponent.GetComponent<Light>();
+        }
+        else
+        {
+            adjScale = maxScale - minScale;
+            lanternRef = null;
+        }
 	}	
 	void Update () {
-        LogData();
-
         if(experienceTime != 1f)
         {
             ThisIsWhereTheFunBegins();
         }
-
         experienceTime = Mathf.MoveTowards(experienceTime, 1f, Time.deltaTime / _BreathTime.GetTotalExperienceTime() );
         TrackStages();
 	}
@@ -163,12 +168,35 @@ public class FireSystem : MonoBehaviour {
         switch (step)
         {
             case (breathe.Inhale):
+                scaleVal = Mathf.MoveTowards(scaleVal, 1f, Time.deltaTime / _BreathTime.GetInhaleTime(currentStage));
+                lanternRef.intensity = minIntensity + (adjIntensity * scaleVal);
+
+                if (lanternRef.intensity == maxIntensity)
+                {
+                    holdTimeSentinel = Time.timeSinceLevelLoad;
+                    step = breathe.Hold;
+                    Debug.Log("Switching to [Hold]");
+                }
                 break;
 
             case (breathe.Hold):
+                if (Time.timeSinceLevelLoad >= holdTimeSentinel + _BreathTime.GetHoldTime(currentStage))
+                {
+                    //holdTimeSentinel = 0f;
+                    step = breathe.Exhale;
+                    Debug.Log("Switching to [Exhale]");
+                }
                 break;
 
             case (breathe.Exhale):
+                scaleVal = Mathf.MoveTowards(scaleVal, 0f, Time.deltaTime / _BreathTime.GetExhaleTime(currentStage));
+                lanternRef.intensity = minIntensity + (adjIntensity * scaleVal);
+
+                if (lanternRef.intensity == minIntensity)
+                {
+                    step = breathe.Inhale;
+                    Debug.Log("Switching to [Inhale]");
+                }
                 break;
 
             default:
