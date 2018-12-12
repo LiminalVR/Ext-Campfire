@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainStick.Plugins", "RainSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainStick.Editor.Plugins", "RainStick.Editor.Plugins.csproj", "{87423AFF-DD0D-4818-9F9F-DD4952FADEBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainStick.Editor", "RainStick.Editor.csproj", "{433D1E55-4701-F8EE-4086-0A8D1E0811E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{87423AFF-DD0D-4818-9F9F-DD4952FADEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87423AFF-DD0D-4818-9F9F-DD4952FADEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87423AFF-DD0D-4818-9F9F-DD4952FADEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433D1E55-4701-F8EE-4086-0A8D1E0811E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433D1E55-4701-F8EE-4086-0A8D1E0811E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433D1E55-4701-F8EE-4086-0A8D1E0811E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433D1E55-4701-F8EE-4086-0A8D1E0811E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
