@@ -17,11 +17,9 @@ public class Paticle_Timer : MonoBehaviour {
 
 		if (timer > timeToStartP) 
 		{
-			print ("OK");
 			foreach (GameObject _gameObject in allParticles) 
 			{
 				_gameObject.SetActive (true);
-				print ("OK");
 			}
 		}
 	}
