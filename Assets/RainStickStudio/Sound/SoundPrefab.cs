@@ -19,7 +19,6 @@ public class SoundPrefab : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        audioOutput = GetComponent<AudioSource>();
 
         timeUntilPlayAgain = Random.Range(minTime, maxTime);
 
