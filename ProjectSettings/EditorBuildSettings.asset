@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Liminal/Examples/TestScene1.unity
     guid: c2093c678d4ba07418d5598e9f1c08c6
-  - enabled: 0
-    path: Assets/RainStickStudio/Scenes/Lydia 1.unity
-    guid: 6089b716dcef0474db481d7b693ae6c0
   - enabled: 1
     path: Assets/RainStickStudio/Scenes/Lydia.unity
     guid: 2f30471b5abe3fb4197d8a27474ab92e
+  - enabled: 0
+    path: Assets/RainStickStudio/Scenes/New Scene.unity
+    guid: de5d9f351bca4a44eaff4bc8e295df9a
