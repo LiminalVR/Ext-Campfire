@@ -1,5 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Liminal.Core.Fader;
+using Liminal.SDK.Core;
 using UnityEngine;
 
 public class FireSystem : MonoBehaviour {
@@ -47,6 +50,8 @@ public class FireSystem : MonoBehaviour {
     [Header("TEST INFO")]
     private float holdTimeSentinel;
     private int currentStage;
+
+    private bool hasEnded = false;
 
     ////////////////////////////////////////////////
     // Monobehaviour Methods
@@ -120,6 +125,18 @@ public class FireSystem : MonoBehaviour {
             currentStage = 2;
             stage3 = Mathf.MoveTowards(stage3, 1f, Time.deltaTime / _BreathTime.GetTotalStageTime(currentStage));
         }
+        else if (Math.Abs(stage2 - 1f) < 0.01f && Math.Abs(stage3 - 1f) < 0.01f && !hasEnded)
+        {
+            hasEnded = true;
+            StartCoroutine(EndRoutine());
+        }
+    }
+
+    private IEnumerator EndRoutine()
+    {
+        ScreenFader.Instance.FadeToBlack(2f);
+        yield return new WaitForSeconds(2.1f);
+        ExperienceApp.End();
     }
 
     void TrackBreath_Fire()
