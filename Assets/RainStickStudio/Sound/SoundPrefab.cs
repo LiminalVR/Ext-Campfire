@@ -27,6 +27,8 @@ public class SoundPrefab : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (audioTracks == null || audioTracks.Count == 0) return;
+
         timeUntilPlayAgain -= Time.deltaTime;
         if (timeUntilPlayAgain < 0)
         {
