@@ -10,8 +10,11 @@ ModelImporter:
     400002: Lamp
     400004: //RootNode
     2300000: Circle
+    2300002: //RootNode
     3300000: Circle
+    3300002: //RootNode
     4300000: Circle
+    4300002: Tree
   externalObjects:
   - first:
       type: UnityEngine:Material

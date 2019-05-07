@@ -17,10 +17,14 @@ ModelImporter:
     400010: //RootNode
     2300000: Circle
     2300002: Circle.002
+    2300004: //RootNode
     3300000: Circle
     3300002: Circle.002
+    3300004: //RootNode
     4300000: Circle
     4300002: Circle.002
+    4300004: Tree
+    4300006: Tree2
   externalObjects:
   - first:
       type: UnityEngine:Material
