@@ -80,36 +80,11 @@ ModelImporter:
     4300022: GrassEdge4
     4300024: GrassEdge5
     4300026: OptimisedTerrain1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_DirtEdging
-    second: {fileID: 2100000, guid: 3afee2603c682f543ba478b8d8badd2c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_GrassEdging
-    second: {fileID: 2100000, guid: 354b0a15bfaa7344292d11eb9d9febc0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_TilingDirt
-    second: {fileID: 2100000, guid: 2aedc7c19e28d0342b99559ca031389f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_TilingRocks
-    second: {fileID: 2100000, guid: 7b4d4f6d7328756498e6645d88b6427d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TilingGrass
-    second: {fileID: 2100000, guid: 1fe6c86d18513c34f82cc7d2a5526188, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -145,7 +120,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
