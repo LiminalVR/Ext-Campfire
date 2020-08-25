@@ -134,8 +134,21 @@ public class FireSystem : MonoBehaviour {
 
     private IEnumerator EndRoutine()
     {
-        ScreenFader.Instance.FadeToBlack(2f);
-        yield return new WaitForSeconds(2.1f);
+        var elapsedTime = 0f;
+        var fadeTime = 2f;
+        var startingVolume = AudioListener.volume;
+
+        ScreenFader.Instance.FadeToBlack(fadeTime);
+
+        while(elapsedTime<fadeTime)
+        {
+            AudioListener.volume = Mathf.Lerp(startingVolume, 0f, elapsedTime / fadeTime);
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return ScreenFader.Instance.WaitUntilFadeComplete();
+
         ExperienceApp.End();
     }
 
