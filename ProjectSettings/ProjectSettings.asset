@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 16
-  productGUID: 40828f1581137804fb8b3bf5b415cf41
+  productGUID: ccaaf9d21636e1d4baa9a37a7e89e7ac
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: RainStickStudio
+  productName: 25082020 - 04:33pm - Campfire
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -53,7 +53,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -64,11 +64,11 @@ PlayerSettings:
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
   androidStartInFullscreen: 1
-  androidRenderOutsideSafeArea: 0
+  androidRenderOutsideSafeArea: 1
   androidBlitType: 0
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -83,7 +83,7 @@ PlayerSettings:
   resizableWindow: 0
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
-  gpuSkinning: 0
+  gpuSkinning: 1
   graphicsJobs: 0
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
@@ -106,7 +106,7 @@ PlayerSettings:
   xboxOneLoggingLevel: 1
   xboxOneDisableEsram: 0
   xboxOnePresentImmediateThreshold: 0
-  switchQueueCommandMemory: 1048576
+  switchQueueCommandMemory: 0
   switchQueueControlMemory: 16384
   switchQueueComputeMemory: 262144
   switchNVNShaderPoolsGranularity: 33554432
@@ -119,13 +119,13 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 0.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
-  xboxOneDisableKinectGpuReservation: 0
-  xboxOneEnable7thCore: 0
+  xboxOneDisableKinectGpuReservation: 1
+  xboxOneEnable7thCore: 1
   vrSettings:
     cardboard:
       depthFormat: 0
@@ -139,7 +139,7 @@ PlayerSettings:
       maximumSupportedHeadTracking: 1
     hololens:
       depthFormat: 1
-      depthBufferSharingEnabled: 0
+      depthBufferSharingEnabled: 1
     lumin:
       depthFormat: 0
       frameTiming: 2
@@ -160,11 +160,11 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.LSC.RainStickStudio
+    Android: com.Liminal.Campfire
     Standalone: com.oculus.UnitySample
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 24
+  AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
   aotOptions: 
@@ -176,8 +176,8 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   keepLoadedShadersAlive: 0
-  StripUnusedMeshComponents: 0
-  VertexChannelCompressionMask: 214
+  StripUnusedMeshComponents: 1
+  VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
   iOSTargetOSVersionString: 9.0
   tvOSSdkVersion: 0
@@ -250,10 +250,10 @@ PlayerSettings:
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
-  clonedFromGUID: 00000000000000000000000000000000
-  templatePackageId: 
-  templateDefaultScene: 
-  AndroidTargetArchitectures: 5
+  clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
+  templatePackageId: com.unity.template.3d@2.3.3
+  templateDefaultScene: Assets/Scenes/SampleScene.unity
+  AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: '{inproject}: '
@@ -365,14 +365,45 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
+  - m_BuildTarget: tvOS
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
+  - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
+  - m_BuildTarget: iPhone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
+  - m_BuildTarget: WebGL
+    m_StaticBatching: 0
+    m_DynamicBatching: 0
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b000000
+    m_Automatic: 1
+  - m_BuildTarget: iOSSupport
+    m_APIs: 10000000
+    m_Automatic: 1
+  - m_BuildTarget: AppleTVSupport
+    m_APIs: 10000000
+    m_Automatic: 0
+  - m_BuildTarget: WebGLSupport
+    m_APIs: 0b000000
+    m_Automatic: 1
   m_BuildTargetVRSettings:
+  - m_BuildTarget: Standalone
+    m_Enabled: 0
+    m_Devices:
+    - Oculus
+    - OpenVR
   - m_BuildTarget: Android
     m_Enabled: 1
     m_Devices:
     - Oculus
-    - daydream
   m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -382,13 +413,7 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality:
-  - m_BuildTarget: Standalone
-    m_EncodingQuality: 1
-  - m_BuildTarget: XboxOne
-    m_EncodingQuality: 1
-  - m_BuildTarget: PS4
-    m_EncodingQuality: 1
+  m_BuildTargetGroupLightmapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
@@ -601,10 +626,10 @@ PlayerSettings:
   splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
-  webGLMemorySize: 256
+  webGLMemorySize: 16
   webGLExceptionSupport: 1
   webGLNameFilesAsHashes: 0
-  webGLDataCaching: 0
+  webGLDataCaching: 1
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
@@ -615,14 +640,7 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
-  scriptingDefineSymbols:
-    1: CROSS_PLATFORM_INPUT
-    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    14: MOBILE_INPUT
-    17: MOBILE_INPUT
-    20: MOBILE_INPUT
-    22: MOBILE_INPUT
+  scriptingDefineSymbols: {}
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
@@ -636,14 +654,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: RainStickStudio
+  metroPackageName: Template_3D
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: RainStickStudio
+  metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -681,7 +699,7 @@ PlayerSettings:
   XboxOneCapability: []
   XboxOneGameRating: {}
   XboxOneIsContentPackage: 0
-  XboxOneEnableGPUVariability: 0
+  XboxOneEnableGPUVariability: 1
   XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
@@ -693,7 +711,8 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -720,4 +739,4 @@ PlayerSettings:
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
-  legacyClampBlendShapeWeights: 1
+  legacyClampBlendShapeWeights: 0

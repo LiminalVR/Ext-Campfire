@@ -128,19 +128,24 @@ public class FireSystem : MonoBehaviour {
         else if (Math.Abs(stage2 - 1f) < 0.01f && Math.Abs(stage3 - 1f) < 0.01f && !hasEnded)
         {
             hasEnded = true;
-            StartCoroutine(EndRoutine());
+            StartCoroutine(EndRoutine(2f));
         }
     }
 
-    private IEnumerator EndRoutine()
+    public void End(float fadeTime)
     {
+        StartCoroutine(EndRoutine(fadeTime));
+    }
+
+    private IEnumerator EndRoutine(float fadeTime)
+    {
+        print("aaaa");
         var elapsedTime = 0f;
-        var fadeTime = 2f;
         var startingVolume = AudioListener.volume;
 
         ScreenFader.Instance.FadeToBlack(fadeTime);
 
-        while(elapsedTime<fadeTime)
+        while (elapsedTime < fadeTime)
         {
             AudioListener.volume = Mathf.Lerp(startingVolume, 0f, elapsedTime / fadeTime);
             elapsedTime += Time.deltaTime;

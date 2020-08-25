@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Packages/com.liminal.sdk/Examples/5.Badminton/Badminton/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Lydia.unity
     guid: 2f30471b5abe3fb4197d8a27474ab92e
-  - enabled: 0
-    path: Assets/Liminal/PlatformViewer/Scenes/PlatformAppViewer.unity
-    guid: 6975b064bb3968644b62e4cfdbef4201
   m_configObjects: {}

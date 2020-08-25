@@ -9,17 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
   m_Name: MusicTimeline
   m_EditorClassIdentifier: 
-  m_NextId: 0
+  m_Version: 0
   m_Tracks:
   - {fileID: 114368353574278476}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
-  m_Version: 0
+  m_MarkerTrack: {fileID: 0}
 --- !u!114 &114121631999515446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29,17 +29,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2113462093, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
   m_Name: Audio Track (1)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips: []
-  m_Version: 2
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
 --- !u!114 &114368353574278476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49,17 +56,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2113462093, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
   m_Name: Audio Track
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 20
+  - m_Version: 1
+    m_Start: 20
     m_ClipIn: 0
     m_Asset: {fileID: 114711643573156032}
     m_Duration: 169.50791383219953
@@ -127,8 +137,12 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Purple Planet Music - Gentle - Celtic Dawn 1_Extended
-    m_Version: 1
-  m_Version: 2
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
 --- !u!114 &114711643573156032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,9 +152,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 8300000, guid: 5c0fab5ddee4a6d4f9de991fab8c571e, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
