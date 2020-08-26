@@ -139,7 +139,6 @@ public class FireSystem : MonoBehaviour {
 
     private IEnumerator EndRoutine(float fadeTime)
     {
-        print("aaaa");
         var elapsedTime = 0f;
         var startingVolume = AudioListener.volume;
 

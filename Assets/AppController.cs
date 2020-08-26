@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class App : MonoBehaviour
+public class AppController : MonoBehaviour
 {
     [Header("App Settings (Seconds)")]
     public float FadeStartTime = 30;

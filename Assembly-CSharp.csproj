@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\App.cs" />
+    <Compile Include="Assets\AppController.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DayNightController.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DemoScripts\RoatateCamera.cs" />
     <Compile Include="Assets\Liminal\MyExperienceApp.cs" />
@@ -73,18 +73,25 @@
     <Compile Include="Assets\Reflection\ReflectionSetup.cs" />
     <Compile Include="Assets\Reflection\ShaderPropertySet.cs" />
     <Compile Include="Assets\Reflection\StereoReflectionRenderer.cs" />
+    <Compile Include="Assets\Reflections\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scenes\FrameRateScript.cs" />
     <Compile Include="Assets\Scripts\AnimatedFire.cs" />
     <Compile Include="Assets\Scripts\BreathPointLerp.cs" />
     <Compile Include="Assets\Scripts\BreathTime.cs" />
     <Compile Include="Assets\Scripts\FireSystem.cs" />
     <Compile Include="Assets\Scripts\ForceEnableCompoundScreenFader.cs" />
+    <Compile Include="Assets\Scripts\MusicController.cs" />
     <Compile Include="Assets\Scripts\ShowHideControllers.cs" />
     <Compile Include="Assets\Scripts\TextTimer.cs" />
     <Compile Include="Assets\Scripts\Time\Paticle_Timer.cs" />
     <Compile Include="Assets\Scripts\Time\UI_Timer.cs" />
     <Compile Include="Assets\Sound\SoundPrefab.cs" />
+    <None Include="Assets\Reflections\Shaders\Mirror.shader" />
+    <None Include="Assets\BuildReport\license.txt" />
     <None Include="Assets\Shaders\LiminalPlatformReflective.shader" />
+    <None Include="Assets\BuildReport\BuildReportToolOptions.xml" />
+    <None Include="Assets\BuildReport\VERSION.txt" />
+    <None Include="Assets\BuildReport\README.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
