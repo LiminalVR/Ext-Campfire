@@ -73,7 +73,6 @@
     <Compile Include="Assets\Reflection\ReflectionSetup.cs" />
     <Compile Include="Assets\Reflection\ShaderPropertySet.cs" />
     <Compile Include="Assets\Reflection\StereoReflectionRenderer.cs" />
-    <Compile Include="Assets\Reflections\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scenes\FrameRateScript.cs" />
     <Compile Include="Assets\Scripts\AnimatedFire.cs" />
     <Compile Include="Assets\Scripts\BreathPointLerp.cs" />
@@ -86,10 +85,10 @@
     <Compile Include="Assets\Scripts\Time\Paticle_Timer.cs" />
     <Compile Include="Assets\Scripts\Time\UI_Timer.cs" />
     <Compile Include="Assets\Sound\SoundPrefab.cs" />
-    <None Include="Assets\Reflections\Shaders\Mirror.shader" />
     <None Include="Assets\BuildReport\license.txt" />
     <None Include="Assets\Shaders\LiminalPlatformReflective.shader" />
     <None Include="Assets\BuildReport\BuildReportToolOptions.xml" />
+    <None Include="Assets\_Project\Environment\Column\Shaders\LiminalColumnGlow.shader" />
     <None Include="Assets\BuildReport\VERSION.txt" />
     <None Include="Assets\BuildReport\README.txt" />
     <Reference Include="Unity.Timeline.Editor">
@@ -97,6 +96,9 @@
     </Reference>
     <Reference Include="Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR_Actions">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Actions.dll</HintPath>
     </Reference>
     <Reference Include="Platform">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Platform.dll</HintPath>
@@ -128,11 +130,23 @@
     <Reference Include="Oculus.VR">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Oculus.VR.dll</HintPath>
     </Reference>
+    <Reference Include="SteamVR_Input_Editor">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Input_Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR_Editor">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR_Windows_EditorHelper">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Windows_EditorHelper.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -312,25 +326,28 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.Cecil">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Liminal.Cecil.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Liminal.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SevenZip">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/SevenZip.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/SevenZip.dll</HintPath>
     </Reference>
     <Reference Include="GVR">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Core/GVR.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Core/GVR.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.SDK">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Core/Liminal.SDK.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Core/Liminal.SDK.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.SDK.VR.Daydream">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@73feba720cc549cba74acbe3417ddc4e0203e2b6/SDK/Assemblies/Core/Liminal.SDK.VR.Daydream.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Assemblies/Core/Liminal.SDK.VR.Daydream.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@6d2e202dd266d478be3d0b2cad31c5ac795bea27/SDK/Frameworks/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>

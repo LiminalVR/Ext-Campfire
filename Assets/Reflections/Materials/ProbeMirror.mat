@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mirror
-  m_Shader: {fileID: 4800000, guid: 96345e600b1052a42a646fc6be248d32, type: 3}
-  m_ShaderKeywords: 
+  m_Name: ProbeMirror
+  m_Shader: {fileID: 4800000, guid: 507e5419769c64e00932f47c2307f9fa, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 50, y: 50}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -65,11 +65,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _RippleTex:
         m_Texture: {fileID: 2800000, guid: d2d38d8e3940fc04a8c1f1302c4caa6d, type: 3}
-        m_Scale: {x: 7, y: 7}
+        m_Scale: {x: 6.04, y: 15}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _Debug: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FadeDistance: 0
@@ -86,17 +87,23 @@ Material:
     - _OffsetRY: 1
     - _OffsetRZ: -0.173
     - _OffsetX: 0.85
-    - _OffsetY: 1
     - _Parallax: 0.02
-    - _ReflectionStrength: 0.27
-    - _RippleSpeed: -1
-    - _RippleStrength: 0.2
+    - _Quest: 0
+    - _ReflectionStrength: 0.25
+    - _Rift: 0
+    - _RiftS: 0
+    - _RippleSpeed: 0.14
+    - _RippleStrength: 0
+    - _Saturation: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _X: 0
+    - _Y: 0
+    - _Z: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.38808295, g: 0.45413712, b: 0.4811321, a: 0.89411765}
-    - _ColorHorizon: {r: 0.1882353, g: 0.24705882, b: 0.23921569, a: 1}
+    - _Color: {r: 0, g: 0.012864498, b: 0.028301895, a: 1}
+    - _ColorHorizon: {r: 0, g: 0.012864498, b: 0.028301895, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
