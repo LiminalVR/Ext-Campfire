@@ -97,9 +97,6 @@
     <Reference Include="Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Editor.dll</HintPath>
     </Reference>
-    <Reference Include="SteamVR_Actions">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Actions.dll</HintPath>
-    </Reference>
     <Reference Include="Platform">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Platform.dll</HintPath>
     </Reference>
@@ -130,6 +127,15 @@
     <Reference Include="Oculus.VR">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Oculus.VR.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR_Actions">
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Actions.dll</HintPath>
+    </Reference>
     <Reference Include="SteamVR_Input_Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Input_Editor.dll</HintPath>
     </Reference>
@@ -138,12 +144,6 @@
     </Reference>
     <Reference Include="SteamVR">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="SteamVR_Windows_EditorHelper">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/ScriptAssemblies/SteamVR_Windows_EditorHelper.dll</HintPath>
