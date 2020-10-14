@@ -68,11 +68,15 @@ Material:
         m_Scale: {x: 6.04, y: 15}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - MyDstMode: 1
+    - MySrcMode: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _Debug: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EnableRampAlpha: 0
+    - _EnableTint: 0
     - _FadeDistance: 0
     - _FadeScaleX: 0
     - _GlossMapScale: 1
@@ -89,7 +93,7 @@ Material:
     - _OffsetX: 0.85
     - _Parallax: 0.02
     - _Quest: 0
-    - _ReflectionStrength: 0.25
+    - _ReflectionStrength: 1.5
     - _Rift: 0
     - _RiftS: 0
     - _RippleSpeed: 0.14
@@ -98,8 +102,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _Vive: 0
+    - _VivePro: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0, g: 0.012864498, b: 0.028301895, a: 1}
-    - _ColorHorizon: {r: 0.2237896, g: 0.4433962, b: 0.4141153, a: 1}
+    - _ColorHorizon: {r: 0.03337486, g: 0.035345566, b: 0.047169805, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
