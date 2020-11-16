@@ -326,28 +326,28 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.Cecil">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Liminal.Cecil.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Liminal.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SevenZip">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/SevenZip.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/SevenZip.dll</HintPath>
     </Reference>
     <Reference Include="GVR">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Core/GVR.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Core/GVR.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.SDK">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Core/Liminal.SDK.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Core/Liminal.SDK.dll</HintPath>
     </Reference>
     <Reference Include="Liminal.SDK.VR.Daydream">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Assemblies/Core/Liminal.SDK.VR.Daydream.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Assemblies/Core/Liminal.SDK.VR.Daydream.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@154915d2546c3fec83d484a32ef4474f7b6c7937/SDK/Frameworks/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.liminal.sdk@53aa30efb5da76a62914827391a4c7f02e2f0fbe/SDK/Frameworks/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Work Repos/Ext-Campfire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
